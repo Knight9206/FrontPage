@@ -5,23 +5,26 @@
   <div class="kosyas-head">
     <div id="target0">
     </div>
+
     <div class="kosyas-top">
       <a href="http://www.kosyas.com" target="_blank">
-        <span class="kosyas-service-logo"></span>
+        <div class="kosyas-service-logo"></div>
       </a>
       <div class="category">
       <section class="color-7">
         <nav class="cl-effect-21">
-          <a href="#" class="scroll">Home</a>
-          <a href="#target1" class="scroll">Why_C-SIMS</a>
-          <a href="#target2" class="scroll">Services</a>
-          <a href="#target3" class="scroll">Function</a>
-          <a href="#target4" class="scroll">Customers</a>
-          <a href="#target5" class="scroll">Contact</a>
+          <a [ngx-scroll-to]="'#target0'" class="scroll">Home</a>
+          <a [ngx-scroll-to]="'#target1'" class="scroll">Why_C-SIMS</a>
+          <a [ngx-scroll-to]="'#target2'" class="scroll">Services</a>
+          <a [ngx-scroll-to]="'#target3'" class="scroll">Supports</a>
+          <a [ngx-scroll-to]="'#target4'" class="scroll">Customers</a>
+          <a [ngx-scroll-to]="'#target5'" class="scroll">Contact</a>
+
+        <button class="flag-button" (click)="switchLanguage('en')"><img class="item" src="assets/imgs/united-states.png"> </button>
+        <button class="flag-button" (click)="switchLanguage('ko')"><img class="item" src="assets/imgs/south-korea.png"> </button>
+        <button class="flag-button" (click)="switchLanguage('fr')"><img class="item" src="assets/imgs/france.png"></button>
+        <button class="flag-button" (click)="switchLanguage('jp')"><img class="item" src="assets/imgs/japan.png"></button>
         </nav>
-        <button (click)="switchLanguage('en')"> {{'btn_eng'|translate}}</button>
-        <button (click)="switchLanguage('ko')"> {{'btn_kor'|translate}}</button>
-        <button (click)="switchLanguage('fr')"> {{'btn_fra'|translate}}</button>
       </section>
       </div>
 
@@ -29,14 +32,13 @@
     </div>
 
     <h3 class="title">{{'title'|translate}}<br>C-SIMS</h3>
-
+    <a href="http://c-sims.com/anonymous/login">
     <button class="submit-button" (click)="goSubmit(   )">
       <span class="submit-title">{{'button'|translate}}</span>
-      <span class="text-hr"></span>
+        <span class="text-hr"></span>
       <span class="submit-sub-title">{{'button-1'|translate}}</span>
-
-
     </button>
+    </a>
   </div>
 
   <div id="target1"></div>
@@ -316,7 +318,7 @@
     </div>
   </footer>
   <div class="goup">
-    <a href="#target0" class="scroll">
+    <a [ngx-scroll-to]="'#target0'" class="scroll">
      <div> <img src="../assets/imgs/upload.png" ></div>
     </a>
   </div>

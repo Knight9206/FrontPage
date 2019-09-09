@@ -8,50 +8,93 @@
     left: -10px;
     right: -10px;
     width: 1900px;
-    height: 680px;
+    height: 900px;
     margin-left: auto;
     margin-right: auto;
     background: url("../assets/imgs/bg_main.png");
     background-size: cover;
 
     .kosyas-top {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      width: 100%;
-      height: 81px;
-      span {
-        &.kosyas-service-logo {
-          position: absolute;
-          width: 280px;
-          height: 40px;
-          background-position: left top;
-          background: url("../assets/imgs/top_logo.png");
-          background-size: 280px 40px;
-        }
 
-      }
-      div.category {
-        color: white;
+
+      .cl-effect-21 a {
         text-align: center;
         width: 100%;
         height: 100%;
         font-size: 17px;
         line-height: 81px;
-        span {
-          &.text-hr {
-            display: inline-block;
-            width: 1px;
-            height: 22px;
-            margin: 0 15px;
-            background-color: #fff;
-            opacity: .1;
-            vertical-align: middle;
-          }
-        }
+
+        padding: 10px;
+        color: #fffdf5;
+        font-weight: 700;
+        text-shadow: none;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        transition: color 0.3s;
       }
+
+
+
+
+      .cl-effect-21 a::before {
+        top: 0;
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        transform: translateY(-10px);
+      }
+
+      .cl-effect-21 a::after {
+        bottom: 0;
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        transform: translateY(10px);
+      }
+
+      .cl-effect-21 a:hover,
+      .cl-effect-21 a:focus {
+        color: #ffd424;
+      }
+
+      .cl-effect-21 a:hover::before,
+      .cl-effect-21 a:focus::before,
+      .cl-effect-21 a:hover::after,
+      .cl-effect-21 a:focus::after {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+      }
+
+
+      position: fixed;
+      z-index: 100;
+      width: 1900px;
+      height: 70px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #1f2458;
+
+      .flag-button {
+        position: relative;
+        width: 60px;
+        outline:none;
+        content-top: 100px;
+        background-color:  #1f2458;
+        border: #1f2458;
+      }
+
+      .kosyas-service-logo {
+        position: absolute;
+        top: 12px;
+        width: 200px;
+        height: 45px;
+        background: url("/../assets/imgs/top_logo.png");
+        background-size: 200px 45px;
+      }
+      .category {
+        text-align: center;
+      }
+
     }
 
     .title {
@@ -93,7 +136,7 @@
         }
         &.submit-img {
           display: inline-block;
-          width: 10px;
+          width: 100px;
           height: 17px;
           background-position: -330px -70px;
           background-image: url("../assets/imgs/retina_img_kosyas.png");
@@ -107,11 +150,16 @@
 
   .kosyas-content-1 {
     position: relative;
-    width: 100%;
-    height: 840px;
-    top: -55px;
+    width: 1900px;
+    height: 850px;
     text-align: center;
-
+    justify-content: center;
+    align-items: center;
+    padding-left:20px;
+    padding-right:-20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -55px;
     .sky-background {
       position: absolute;
       top: 0;
@@ -260,13 +308,18 @@
 
   .kosyas-content-2 {
     position: relative;
-    width: 100%;
-    height: 750px;
-    top: -55px;
     background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: -5px;
+    left: -10px;
+    right: -10px;
+    width: 1900px;
+    height: 680px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     .content-img {
       display: inline-block;
       img {
