@@ -58,10 +58,12 @@ export class AppComponent implements OnInit {
 
     function fnMove(seq) {
       const offset = $('#div' + seq).offset();
-      $('html, body').animate({scrollTop : offset.top}, 400);
+      $('html, body').animate({scrollTop : 0}, 400);
     }
 
-
+    $(window).on('beforeunload', function() {
+      $(window).scrollTop(0);
+    });
    // for (const htmlElementJQueryElement of $('.scroll').click(function (event) {
    //    event.preventDefault();
    //    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500);

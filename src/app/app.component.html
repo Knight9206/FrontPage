@@ -3,16 +3,19 @@
 <div class="home-container" [ngsRevealSet]="{ reset:false }" [ngsSelector]="'.item'">
 
   <div class="kosyas-head">
+
+
+
     <div id="target0">
     </div>
 
     <div class="kosyas-top">
-      <a href="http://www.kosyas.com" target="_blank">
+      <a href="#" >
         <div class="kosyas-service-logo"></div>
       </a>
-      <div class="category">
-      <section class="color-7">
+
         <nav class="cl-effect-21">
+          <div class="category">
           <a [ngx-scroll-to]="'#target0'" class="scroll">Home</a>
           <a [ngx-scroll-to]="'#target1'" class="scroll">Why_C-SIMS</a>
           <a [ngx-scroll-to]="'#target2'" class="scroll">Services</a>
@@ -24,20 +27,17 @@
         <button class="flag-button" (click)="switchLanguage('ko')"><img class="item" src="assets/imgs/south-korea.png"> </button>
         <button class="flag-button" (click)="switchLanguage('fr')"><img class="item" src="assets/imgs/france.png"></button>
         <button class="flag-button" (click)="switchLanguage('jp')"><img class="item" src="assets/imgs/japan.png"></button>
+          </div>
         </nav>
-      </section>
-      </div>
 
-      <span class="more-icon"></span>
     </div>
 
     <h3 class="title">{{'title'|translate}}<br>C-SIMS</h3>
     <a href="http://c-sims.com/anonymous/login">
-    <button class="submit-button" (click)="goSubmit(   )">
-      <span class="submit-title">{{'button'|translate}}</span>
-        <span class="text-hr"></span>
-      <span class="submit-sub-title">{{'button-1'|translate}}</span>
-    </button>
+      <div class="btn hover4">
+        {{'button'|translate}} |
+        {{'button-1'|translate}}
+      </div>
     </a>
   </div>
 
@@ -239,11 +239,13 @@
     </div>
     <div class="content-hr"></div>
 
-    <button class="submit-button" (click)="goSubmit()">
+
       <a href = "https://docs.google.com/forms/d/12nvJDGgksohDAWFOiaj4LP3p9pfleaTolV_xF6nj4-k/edit" target="_blank">
-      <span class="submit-title">{{'content-6-3'|translate}}</span>
+        <div class="submit-button-1 hover4">
+          {{'content-6-3'|translate}}
+        </div>
       </a>
-    </button>
+
 
     <div class="content-img">
 
@@ -274,19 +276,7 @@
 
   <footer class="kosyas-footer">
     <div class="content-text">
-      <div class="content-01">
-        <a href="#">공지사항</a>
-        <span class="text-hr"></span>
-        <a href="#">민원접수</a>
-        <span class="text-hr"></span>
-        <a href="#">보호상품등록</a>
-        <span class="text-hr"></span>
-        <a href="#">상품공시</a>
-        <span class="text-hr"></span>
-        <a href="#">경영공시</a>
-        <span class="text-hr"></span>
-        <a href="#">개인정보처리방침</a>
-      </div>
+
       <div class="content-02">
         <span class="tel">{{'content-7-1'|translate}}   </span>
         <br>
